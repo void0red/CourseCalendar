@@ -3,6 +3,7 @@
 test on google calendar 
 ## Usage:
 ```shell
+//prebuild version
 ./bin
 -d string
     start date(default: today)
@@ -11,4 +12,8 @@ test on google calendar
     password
 -u string
     username
+```
+## Build:
+```shell
+go build ./src
 ```
