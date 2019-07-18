@@ -1,9 +1,10 @@
 # CourseCalendar
 > only for ehall.xidian.edu.cn
-test on google calendar 
+test on google calendar
+## Precompiled Version
+https://github.com/void0red/CourseCalendar/releases
 ## Usage:
 ```shell
-//prebuild version
 ./bin
 -d string
     start date(default: today)
