@@ -25,7 +25,10 @@ func Parser(r io.Reader) Courses {
 		wg.Add(1)
 		go func(s map[string]interface{}) {
 			name := t["KCM"].(string)
-			teacher := t["SKJS"].(string)
+			teacher := ""
+			if t["SKJS"] != nil {
+				teacher = t["SKJS"].(string)
+			}
 			var target *Course
 			lock.Lock()
 			b, i := ret.CheckRepeat(name, teacher)
